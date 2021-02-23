@@ -5,7 +5,7 @@ import Listings from './components/listings';
 import Login from './components/login';
 import "./App.css";
 
-//Navigation bar that stays always for the mean time. Eventually will have login page that redirects to this
+//Navigation bar that stays aalways for the mean time. Eventually will have login page that redirects to this
 // so, the nav bar will then be just listings and home (and other pages that come later)
 
 class App extends Component {
