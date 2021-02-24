@@ -1,38 +1,35 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import React from 'react'
+import SignUp from './components/auth/SignUp';
+import { AuthProvider } from './contexts/AuthContext.js';
+import './App.css';
+import Dashboard from './components/auth/Dashboard';
+import Login from './components/auth/Login';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import PrivateRoute from './components/auth/PrivateRoute'
+import ForgotPassword from './components/auth/ForgotPassword';
+import UpdateProfile from './components/auth/UpdateProfile';
 import Home from './components/home';
 import Listings from './components/listings';
-import Login from './components/login';
-import "./App.css";
+import {Container} from 'react-bootstrap'
 
-//Navigation bar that stays aalways for the mean time. Eventually will have login page that redirects to this
-// so, the nav bar will then be just listings and home (and other pages that come later)
-
-class App extends Component {
-  render() {
-    return (
-    <Router>
-        <div>
-          <center>
-            <h1>Real Estate Web Application</h1>
-          </center>
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <ul className="navbar-nav mr-auto">
-              <li><Link to={'/'} className="nav-link"> Home </Link></li>
-              <li><Link to={'/listings'} className="nav-link">Listings</Link></li>
-              <li><Link to={'/login'} className="nav-link">Login</Link></li>
-            </ul>
-          </nav>
-          <hr />
+function App() {
+  return (
+    <Container>
+      <Router>
+        <AuthProvider>
           <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/listings' component={Listings} />
-              <Route path='/login' component={Login} />
+            <Route exact path='/' component={Home} />
+            <PrivateRoute path='/user' component={Dashboard} />
+            <PrivateRoute path='/update-profile' component={UpdateProfile} />
+            <Route path='/signup' component={SignUp} />
+            <Route path='/listings' component={Listings} />
+            <Route path='/login' component={Login} />
+            <Route path='/forgot-password' component={ForgotPassword} />
           </Switch>
-        </div>
+        </AuthProvider>
       </Router>
-    );
-  }
+    </Container>
+  );
 }
 
 export default App;
