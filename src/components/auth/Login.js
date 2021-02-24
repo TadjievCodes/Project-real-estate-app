@@ -31,7 +31,10 @@ export default function Login() {
   return (
     <Container>
       <Header/>
-      <Card>
+      <Card 
+      bg='transparent'
+      border='0'
+      >
         <Card.Body>
           <h2 className="text-center mb-4">Log In</h2>
           {error && <Alert variant="danger">{error}</Alert>}
