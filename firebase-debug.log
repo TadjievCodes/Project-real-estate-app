@@ -1,0 +1,21 @@
+[debug] [2021-02-24T01:33:00.318Z] ----------------------------------------------------------------------
+[debug] [2021-02-24T01:33:00.323Z] Command:       D:\NodeJS\node.exe C:\Users\bates\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-24T01:33:00.323Z] CLI Version:   7.12.1
+[debug] [2021-02-24T01:33:00.323Z] Platform:      win32
+[debug] [2021-02-24T01:33:00.323Z] Node Version:  v13.9.0
+[debug] [2021-02-24T01:33:00.325Z] Time:          Tue Feb 23 2021 20:33:00 GMT-0500 (Eastern Standard Time)
+[debug] [2021-02-24T01:33:00.326Z] ----------------------------------------------------------------------
+[debug] [2021-02-24T01:33:00.326Z] 
+[debug] [2021-02-24T01:33:00.402Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-24T01:33:00.403Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\bates\Desktop\real-estate-app-master\Project-real-estate-app
+

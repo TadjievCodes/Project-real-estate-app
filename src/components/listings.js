@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import listingsArray from './images';
 
 
@@ -24,7 +25,10 @@ function showListings(listings){
 class Listings extends Component {
   render() {
     return (
-      showListings(listingsArray)
+      <div>
+      <Header/>
+      {showListings(listingsArray)}
+      </div>
     );
   }
 }
