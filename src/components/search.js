@@ -7,6 +7,15 @@ import {
   PropertyListingsConsumer
 } from '../contexts/PropertyListingsProvider'
 
+//import { Router } from '@reach/router'
+import Listing from '../components/listing'
+
+
+
+//<script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
+//import { BrowserRouter, Route, Link } from "react-router-dom";
+
+
 
 
 function Search() {
@@ -21,12 +30,14 @@ function Search() {
   {function(value) {
     const { propertyListings } = value
     return (
-      <ul>
-        {propertyListings.map(listing => (
-          <li>{listing.title}</li>
-        ))}
-      </ul>
-      
+ 
+      <div className="columns">
+  {propertyListings.map(listing => (
+    <Listing listing={listing} key={listing.address} />
+  ))}
+</div>
+
+
     )
   }}
   

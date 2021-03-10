@@ -20,8 +20,11 @@ function Hero() {
         <p className="mb-0">Bringing premium property right to your fingertips</p>
       </div>
     
-     </div>
+    
 
+     </div>
+     
+    
 
 
   )

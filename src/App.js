@@ -14,6 +14,7 @@ import Search from './components/search';
 import {Container} from 'react-bootstrap'
 // import 'spectre.css/dist/spectre.css'
 
+
 //import App from './assets/js/realEstate'
 
 function App() {
