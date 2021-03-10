@@ -1,8 +1,8 @@
-.hero {
-  background-image: url('../../../src/img/hero.jpg');   
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
+div.hero.hero-lg.mb-3 {
+  background-image: url('../../../src/img/hero.jpg')  !important;   
+  background-repeat: no-repeat !important;
+  background-size: cover  !important;
+  background-attachment: scroll  !important;
 }
 
 @media screen and (min-width: 992px) {
