@@ -7,13 +7,11 @@ import {
   PropertyListingsConsumer
 } from '../contexts/PropertyListingsProvider'
 
-//import { Router } from '@reach/router'
 import Listing from '../components/listing'
 
 
 
-//<script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
-//import { BrowserRouter, Route, Link } from "react-router-dom";
+
 
 
 
