@@ -14,3 +14,11 @@ code {
     monospace;
 }
 
+
+.container {
+  max-width: 1200px;
+}
+
+.text-small {
+  font-size: small;
+}

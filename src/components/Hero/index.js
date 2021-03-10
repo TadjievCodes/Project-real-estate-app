@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import styles from './styles.module.css'
+
 import classnames from 'classnames'
 
 
@@ -20,7 +21,6 @@ function Hero() {
         <p className="mb-0">Bringing premium property right to your fingertips</p>
       </div>
     
-    
 
      </div>
      
@@ -29,12 +29,6 @@ function Hero() {
 
   )
 }
-
-
-
-
-  
-
 
 
 
