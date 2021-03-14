@@ -24,21 +24,7 @@ function Search() {
       <Hero />
       <div className="container">
         <PropertyListingsProvider>
-  <PropertyListingsConsumer>
-  {function(value) {
-    const { propertyListings, updateFilter } = value
-    return (
-      <React.Fragment>
-        <Filter updateFilter={updateFilter} />
-        <div className="columns">
-          {propertyListings.map(listing => (
-            <Listing listing={listing} key={listing.address} />
-          ))}
-        </div>
-      </React.Fragment>
-    )
-  }}
-</PropertyListingsConsumer>
+  
 </PropertyListingsProvider>
 
     
