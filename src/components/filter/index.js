@@ -71,19 +71,19 @@ class Filter extends React.Component {
                   </label>
                 </div>
                 <div className="col-9 col-sm-12">
-                       <select
-                          className="form-select"
-                          id="postcode"
-                          value={this.state.postcode}
-                          onChange={event => this.setState({ postcode: event.target.value })}
-                       >
-                        <option value="">Choose...</option>
-                         {postcodes.map(pc => (
-                         <option key={pc} value={pc.toLowerCase()}>
-                        {pc}
-                        </option>
-                        ))}
-                      </select>
+                     <select
+                      className="form-select"
+                     id="postcode"
+                     value={this.state.postcode}
+                    onChange={event => this.setState({ postcode: event.target.value })}
+>
+                  <option value="">Choose...</option>
+                 {this.props.postcodes.map(pc => (
+                 <option key={pc} value={pc.toLowerCase()}>
+                {pc}
+                </option>
+                 ))}
+               </select>
                 </div>
               </div>
             </div>

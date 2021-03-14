@@ -67,8 +67,9 @@ render() {
   return (
     <PropertyListingsContext.Provider
       value={{
-        propertyListings: filteredListings,
-        updateFilter: this.updateFilter,
+        allListings: propertyListings,
+          propertyListings: filteredListings,
+          updateFilter: this.updateFilter
 
       }}
     >
