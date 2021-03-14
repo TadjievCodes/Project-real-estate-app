@@ -24,7 +24,26 @@ function Search() {
       <Hero />
       <div className="container">
         <PropertyListingsProvider>
-  
+       <PropertyListingsConsumer>
+  {function(value) {
+    const { propertyListings, allListings, updateFilter } = value
+    return (
+      <React.Fragment>
+        <Filter
+          updateFilter={updateFilter}
+          postcodes={allListings
+            .map(listing => listing.postcode.split(' ')[0])
+            .filter((item, i, arr) => arr.indexOf(item) === i)}
+        />
+        <div className="columns">
+          {propertyListings.map(listing => (
+            <Listing listing={listing} key={listing.address} />
+          ))}
+        </div>
+      </React.Fragment>
+    )
+  }}
+</PropertyListingsConsumer>
 </PropertyListingsProvider>
 
     
