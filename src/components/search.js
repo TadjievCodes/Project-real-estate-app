@@ -9,7 +9,7 @@ import {
 
 import Listing from '../components/listing'
 
-
+import Filter from '../components/filter'
 
 
 
@@ -24,22 +24,21 @@ function Search() {
       <Hero />
       <div className="container">
         <PropertyListingsProvider>
-         <PropertyListingsConsumer>
+  <PropertyListingsConsumer>
   {function(value) {
-    const { propertyListings } = value
+    const { propertyListings, updateFilter } = value
     return (
- 
-      <div className="columns">
-  {propertyListings.map(listing => (
-    <Listing listing={listing} key={listing.address} />
-  ))}
-</div>
-
-
+      <React.Fragment>
+        <Filter updateFilter={updateFilter} />
+        <div className="columns">
+          {propertyListings.map(listing => (
+            <Listing listing={listing} key={listing.address} />
+          ))}
+        </div>
+      </React.Fragment>
     )
   }}
-  
- </PropertyListingsConsumer>
+</PropertyListingsConsumer>
 </PropertyListingsProvider>
 
     

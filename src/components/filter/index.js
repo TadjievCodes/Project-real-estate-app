@@ -4,13 +4,41 @@ import classnames from 'classnames'
 import styles from '../Hero/styles.module.css'
 
 class Filter extends React.Component {
+    constructor(props) {
+    super(props)
+    this.priceFrom = React.createRef()
+    
+  }
+
+
+   state = {
+       priceFrom: '',
+       postcode: '',
+       sortOrder: '',
+       sortOrders: ['Highest First', 'Lowest First']
+}
+
+
+  
+  submitForm = e => {
+    e.preventDefault();
+    alert(`The price from is; ${this.priceFrom.current.value}`);
+  };
+
   render() {
+
+   const postcodes = []
+
+
     const containerClasses = classnames('container', 'mb-1', styles.container)
     const formClasses = classnames('form-horizontal', styles.form)
 
     return (
       <div className={containerClasses}>
-        <form className={formClasses} noValidate>
+        <form className={formClasses} 
+        noValidate
+        onChange={() => setTimeout(() => this.props.updateFilter(this.state), 0)}
+        >
           <p className="mb-1">Refine your results</p>
           <div className="columns text-center">
             <div className="column col-4 col-xs-12">
@@ -22,14 +50,17 @@ class Filter extends React.Component {
                 </div>
                 <div className="col-9 col-sm-12">
                   <input
-                    className="form-input"
-                    min="0"
-                    max="10000000"
-                    type="number"
-                    id="price-from"
-                    placeholder="£1,000,000"
-                  />
-                </div>
+                      className="form-input"
+                      min="0"
+                      max="10000000"
+                      type="number"
+                      id="price-from"
+                      placeholder="£1,000,000"
+                      value={this.state.priceFrom}
+                      onChange={event => this.setState({ priceFrom: Number(event.target.value) })}
+/>
+               
+                  </div>
               </div>
             </div>
             <div className="column col-4 col-xs-12">
@@ -40,9 +71,19 @@ class Filter extends React.Component {
                   </label>
                 </div>
                 <div className="col-9 col-sm-12">
-                  <select className="form-select" id="postcode">
-                    <option value="">Choose...</option>
-                  </select>
+                       <select
+                          className="form-select"
+                          id="postcode"
+                          value={this.state.postcode}
+                          onChange={event => this.setState({ postcode: event.target.value })}
+                       >
+                        <option value="">Choose...</option>
+                         {postcodes.map(pc => (
+                         <option key={pc} value={pc.toLowerCase()}>
+                        {pc}
+                        </option>
+                        ))}
+                      </select>
                 </div>
               </div>
             </div>
@@ -54,13 +95,26 @@ class Filter extends React.Component {
                   </label>
                 </div>
                 <div className="col-9 col-sm-12">
-                  <select className="form-select" id="sortorder">
-                    <option value="">Choose...</option>
-                  </select>
+                   <select
+                        className="form-select"
+                        id="sortorder"
+                        value={this.state.sortOrder}
+                        onChange={event => this.setState({ sortOrder: event.target.value })}
+                   >
+                 <option value="">Choose...</option>
+                {this.state.sortOrders.map(order => (
+               <option key={order} value={order.replace(' ', '').toLowerCase()}>
+               {order}
+               </option>
+               ))}
+              </select>
+
                 </div>
               </div>
             </div>
           </div>
+                   {'...'}
+
         </form>
       </div>
     )
@@ -70,21 +124,5 @@ class Filter extends React.Component {
 export default Filter
 
 
-class UncontrolledForm extends React.Component {
-  constructor(props) {
-    super(props)
-    this.priceFrom = React.createRef()
-  }
-  // ...
-}
-
-<input
-  ref={this.priceFrom}
-  type="number"
-  min="0"
-  max="10000000"
-  id="price-from"
-  placeholder="£1,000,000"
-/>
 
 
