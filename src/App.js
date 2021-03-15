@@ -13,12 +13,13 @@ import Listings from './components/listings';
 import Search from './components/search';
 import {Container} from 'react-bootstrap'
 import 'spectre.css/dist/spectre.css'
-
+import Map from './components/map'
 
 
 
 function App() {
   return (
+  
     <Container>
       <Router>
         <AuthProvider>
@@ -31,11 +32,15 @@ function App() {
             <Route path='/login' component={Login} />
             <Route path='/forgot-password' component={ForgotPassword} />
             <Route path='/search' component={Search} />
+            <Route path='/map' component={Map} />
+
           </Switch>
         </AuthProvider>
       </Router>
     </Container>
   );
 }
+
+
 
 export default App;
