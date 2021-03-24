@@ -17,3 +17,5 @@ function App2() {
 
 //const rootElement = document.getElementById("root");
 //ReactDOM.render(<App2 />, rootElement);
+
+export default App2
