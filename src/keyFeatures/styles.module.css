@@ -1,0 +1,9 @@
+.list {
+  text-align: left;
+}
+
+small {
+ text-align:left;
+ list-style:disc outside none;
+     display:list-item; 
+}
