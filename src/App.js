@@ -17,6 +17,10 @@ import Map from './components/map'
 
 
 
+import HomeTwo from './pages/HomeTwo'
+import Details from './pages/Details'
+
+
 function App() {
   return (
   
@@ -33,6 +37,8 @@ function App() {
             <Route path='/forgot-password' component={ForgotPassword} />
             <Route path='/search' component={Search} />
             <Route path='/map' component={Map} />
+            <Route path='/HomeTwo' component={HomeTwo} />
+            <Route path='/details' component={Details} />
 
           </Switch>
         </AuthProvider>
