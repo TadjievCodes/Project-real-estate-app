@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 
 import Map from './map/'
-import KeyFeatures from '../keyFeatures'
+import KeyFeatures from '../components/keyFeatures'
 import styles from "../components/style.css";
 
 
