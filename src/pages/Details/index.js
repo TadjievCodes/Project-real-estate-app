@@ -2,7 +2,7 @@ import * as React from 'react'
 import Map from '../../components/map'
 import KeyFeatures from '../../components/keyFeatures'
 
-function Details() {
+function Details({ propertyId }) {
   const features = [
     'Help to Buy available, ideal for first time buyers',
     'Within walking distance of the Northern Quarter, Ancoats & NOMA',
@@ -13,6 +13,7 @@ function Details() {
   ]
   return (
     <div>
+      Show details for property with Id of {propertyId}
       <KeyFeatures features={features} />
       <Map />
     </div>
