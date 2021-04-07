@@ -1,4 +1,6 @@
 import * as React from 'react'
+import Hero from '../../components/Hero'
+
 
 import {
   PropertyListingsProvider,
@@ -9,6 +11,9 @@ import PropertyDetails from '../../components/propertyDetails'
 
 function Details({ propertyId }) {
   return (
+  <React.Fragment>
+      <Hero />
+
     <div className="container">
       <PropertyListingsProvider>
         <PropertyListingsConsumer>
@@ -18,6 +23,8 @@ function Details({ propertyId }) {
         </PropertyListingsConsumer>
       </PropertyListingsProvider>
     </div>
+ </React.Fragment>
+   
   )
 }
 
