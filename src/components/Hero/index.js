@@ -13,7 +13,7 @@ const classes = classnames('hero', 'hero-lg', 'mb-3', styles.hero)
 
 
 
-
+{/*
 function Hero() {
   return (
     
@@ -32,6 +32,28 @@ function Hero() {
 
   )
 }
+
+*/}
+
+
+function Hero({ miniHero }) {
+  const classes = classnames(styles.hero, 'hero', 'mb-3',  {
+    'hero-sm': miniHero,
+    [styles.miniHero]: miniHero,
+    'hero-lg': !miniHero
+  })
+
+  return (
+    <div className={classes}>
+      <div className="hero-body text-center text-light">
+        <h1>Premium Property Finder</h1>
+        <p className="mb-0">Bringing premium property right to your fingertips</p>
+      </div>
+    </div>
+  )
+}
+
+
 
 
 
