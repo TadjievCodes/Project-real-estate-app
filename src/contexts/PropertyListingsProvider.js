@@ -16,6 +16,8 @@ export const PropertyListingsConsumer = PropertyListingsContext.Consumer
 export class PropertyListingsProvider extends React.Component {
       
   static applyFilter(listings, filter) {
+   
+
 
     const { priceFrom, postcode, sortOrder } = filter
     let result = listings
@@ -38,6 +40,8 @@ export class PropertyListingsProvider extends React.Component {
   }
 
 
+       
+
   state = DefaultState
 
   componentDidMount() {
@@ -48,6 +52,12 @@ export class PropertyListingsProvider extends React.Component {
       })
   }
     
+
+  getListingByPropertyId = propertyId => {
+    const { propertyListings } = this.state
+    return propertyListings.find(listing => listing.id === Number(propertyId))
+  }
+
     updateFilter = filter => {
     this.setState({
     filter
@@ -62,14 +72,17 @@ render() {
   const filteredListings = PropertyListingsProvider.applyFilter(
     propertyListings,
     filter
+    
   )
+
 
   return (
     <PropertyListingsContext.Provider
       value={{
         allListings: propertyListings,
           propertyListings: filteredListings,
-          updateFilter: this.updateFilter
+          updateFilter: this.updateFilter,
+          getListingByPropertyId: this.getListingByPropertyId
 
       }}
     >
@@ -77,5 +90,8 @@ render() {
     </PropertyListingsContext.Provider>
   )
 }
+
+  
+  
 
 }

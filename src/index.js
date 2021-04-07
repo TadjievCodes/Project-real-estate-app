@@ -6,14 +6,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Router } from '@reach/router'
-
+import Details from './pages/Details'
 
 
 ReactDOM.render(
  <Router> 
  
     <App default />     
-     
+     <Details path="/details/:propertyId" />
+
   </Router>,
   document.getElementById('root')
 );

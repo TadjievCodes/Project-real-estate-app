@@ -38,7 +38,7 @@ function App() {
             <Route path='/search' component={Search} />
             <Route path='/map' component={Map} />
             <Route path='/HomeTwo' component={HomeTwo} />
-            <Route path='/details/:propertyId' component={Details} />
+          {/*   <Route path='/details/:propertyId' component={Details} />   */}
 
           </Switch>
         </AuthProvider>

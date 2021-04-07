@@ -11,7 +11,7 @@ class Header extends Component {
         <li><Link to={'/login'} className="nav-link">Login</Link></li>
         <li><Link to={'/search'} className="nav-link">Property Finder</Link></li>
         <li><Link to={'/map'} className="nav-link">Map</Link></li>
-        <li><Link to={'/details/:propertyId'} className="nav-link">Details</Link></li>
+       {/* <li><Link to={'/details'} className="nav-link">Details</Link></li>  */}
       </ul>
     </nav>
     );
