@@ -3,13 +3,15 @@ import classnames from 'classnames'
 
 import KeyFeatures from '../keyFeatures'
 import Map from '../map'
+import Gallery from '../gallery'
+
 
 function PropertyDetails({ listing }) {
   if (!listing) {
     return null
   }
 
-  const { title, address, description, price, features, details } = listing
+  const { title, address, description, price, features, details, image } = listing
   const priceClasses = classnames('text-success', 'text-right')
 
   return (
@@ -29,9 +31,12 @@ function PropertyDetails({ listing }) {
         </div>
       </div>
       <div className="columns">
-        <div className="column col-6 col-xs-12" />
         <div className="column col-6 col-xs-12">
-          <KeyFeatures features={features} />
+           <Gallery image={image} title={title} />
+          </div>
+        <div className="column col-6 col-xs-12">
+          <KeyFeatures features={features} />  
+          
         </div>
       </div>
       <p className="text-bold mt-3">Full Details</p>
