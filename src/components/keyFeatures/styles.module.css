@@ -2,8 +2,17 @@
   text-align: left;
 }
 
+
 small {
- text-align:left;
- list-style:disc outside none;
+ /*-align:left;*/
+ /*list-style:disc outside none;*/
      display:list-item; 
+}
+
+p {
+list-style: none;
+}
+
+small::marker {
+color:transparent;
 }
