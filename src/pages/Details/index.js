@@ -12,7 +12,7 @@ import PropertyDetails from '../../components/propertyDetails'
 function Details({ propertyId }) {
   return (
   <React.Fragment>
-      <Hero />
+      <Hero miniHero />
 
     <div className="container">
       <PropertyListingsProvider>
