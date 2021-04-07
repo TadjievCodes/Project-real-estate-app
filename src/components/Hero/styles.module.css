@@ -1,15 +1,20 @@
-div.hero.hero-lg.mb-3 {
+/*
+.hero {
   background-image: url('../../../src/img/hero.jpg')  !important;   
   background-repeat: no-repeat !important;
   background-size: cover  !important;
   background-attachment: scroll  !important;
 }
+*/
 
+/*
 @media screen and (min-width: 992px) {
   .miniHero {
     background-position-y: -150px;
   }
 }
+*/
+
 
 .hero {
   background-image: url('../../../src/img/hero.jpg');
@@ -17,6 +22,7 @@ div.hero.hero-lg.mb-3 {
   background-size: cover;
   background-attachment: scroll;
 }
+
 
 @media screen and (min-width: 992px) {
   .miniHero {
