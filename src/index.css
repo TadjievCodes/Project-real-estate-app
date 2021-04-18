@@ -14,13 +14,40 @@ code {
     monospace;
 }
 
+.popoverBtn{
+  margin-top: 10px;
+}
+.popoverSendBtn{
+  /* margin: 10px, 0px, 15px, 300px; */
+  margin-top: 10px;
+  margin-left: 270px;
+  margin-bottom: 10px;
+}
+a {
+  color: #FFF;
+}
+a:hover {
+   color: #00F
+}
+
 
 .container {
+  margin: 80px, auto, 0, auto;
   max-width: 1200px;
+
+  
 }
 
 .text-small {
   font-size: small;
+}
+
+.nav-container{
+  margin: auto;
+}
+
+.button-nav{
+  margin: 30px, 0, 30px, 0;
 }
 
 /*

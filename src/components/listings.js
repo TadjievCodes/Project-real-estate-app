@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header';
 import listingsArray from './images';
 
 
@@ -26,7 +25,6 @@ class Listings extends Component {
   render() {
     return (
       <div>
-      <Header/>
       {showListings(listingsArray)}
       </div>
     );
