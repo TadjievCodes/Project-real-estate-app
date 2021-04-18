@@ -20,7 +20,7 @@ export default function Dashboard() {
     try {
       await logout()
 
-      // redirech to login 
+      // redirect to login 
       history.push("/login")
     } catch {
       setError("Failed to log out")

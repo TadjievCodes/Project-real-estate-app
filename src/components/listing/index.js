@@ -14,7 +14,7 @@ function Listing({ listing }) {
 
   return (
     <div className={columnClasses} style={{ margin: '1rem 0' }}>
-      <div className={cardClasses}>
+      <div style= {{height: "100%"}} className={cardClasses}>
         <div className="card-image">
           <img className="img-responsive" src={`/server/${image}`} alt={address} />
         </div>
