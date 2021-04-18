@@ -40,8 +40,12 @@
 
 .navbar-nav{
   list-style: none !important;
-  width: 100% !important;
+  width: 100vw !important;
   text-align: center !important;
+}
+
+nav{
+  width: 100vw !important;
 }
 
 li{
