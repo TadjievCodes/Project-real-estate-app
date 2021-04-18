@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link } from '@reach/router'
 import classnames from 'classnames'
-
+import SimplePopover from '../SimplePopover';
 
 function Listing({ listing }) {
   if (!listing) {
@@ -28,6 +28,7 @@ function Listing({ listing }) {
           <Link className="btn btn-primary" to={`/details/${id}`}>
             Go to property
           </Link>
+          <SimplePopover/>
         </div>
       </div>
     </div>

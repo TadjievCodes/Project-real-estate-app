@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import Header from "./Header";
 import Grid from "@material-ui/core/Grid";
@@ -5,10 +6,15 @@ import Card from "./Card/cardUI";
 import { makeStyles } from "@material-ui/core";
 import realtors from './realtors/realtors';
 
+import React, { Component } from 'react';
+import listingsArray from './images';
+
+
 class Realtors extends Component {
   render() {
     //returns the header (nav) and a grid container which has the data from realtors mapped to a grid item each
     return (
+
       <div style={{textAlign: "center"}}>
         <Header />
         <h1> Realtors </h1>
@@ -19,6 +25,10 @@ class Realtors extends Component {
             </Grid>
           ))}
         </Grid>
+
+      <div>
+      {showListings(listingsArray)}
+
       </div>
     );
   }

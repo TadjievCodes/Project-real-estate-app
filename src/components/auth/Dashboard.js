@@ -3,6 +3,7 @@ import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import CenteredContainer from "./CenteredContainer"
+import Header from '../Header';
 
 export default function Dashboard() {
 
@@ -28,6 +29,7 @@ export default function Dashboard() {
 
   return (
     <CenteredContainer>
+      <Header/>
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>

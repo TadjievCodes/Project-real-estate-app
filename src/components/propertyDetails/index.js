@@ -1,6 +1,5 @@
 import * as React from 'react'
 import classnames from 'classnames'
-
 import KeyFeatures from '../keyFeatures'
 import Map from '../map'
 import Gallery from '../gallery'

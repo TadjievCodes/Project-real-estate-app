@@ -3,7 +3,6 @@ import { Form, Button, Card, Alert, Container } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import CenteredContainer from './CenteredContainer'
-import Header from '../Header';
 
 export default function Login() {
   const emailRef = useRef()
@@ -30,7 +29,6 @@ export default function Login() {
 
   return (
     <Container>
-      <Header/>
       <Card 
       bg='transparent'
       border='0'
