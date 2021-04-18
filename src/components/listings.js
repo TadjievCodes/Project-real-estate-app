@@ -6,17 +6,12 @@ import Card from "./Card/cardUI";
 import { makeStyles } from "@material-ui/core";
 import realtors from './realtors/realtors';
 
-import React, { Component } from 'react';
-import listingsArray from './images';
-
 
 class Realtors extends Component {
   render() {
     //returns the header (nav) and a grid container which has the data from realtors mapped to a grid item each
     return (
-
       <div style={{textAlign: "center"}}>
-        <Header />
         <h1> Realtors </h1>
         <Grid container spacing={4} justify="center">
           {realtors.map(realtor => (
@@ -25,10 +20,6 @@ class Realtors extends Component {
             </Grid>
           ))}
         </Grid>
-
-      <div>
-      {showListings(listingsArray)}
-
       </div>
     );
   }
