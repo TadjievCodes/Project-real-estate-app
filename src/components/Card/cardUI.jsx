@@ -1,24 +1,22 @@
 import React from 'react';
-import { makeStyles, withTheme } from '@material-ui/core/styles';
-import clsx from 'clsx';
+import { makeStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import { grey, lightBlue, red } from '@material-ui/core/colors';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     //maxWidth: 345,
-    backgroundColor: '#4B6858',
+    backgroundColor: '#07090F',
     textAlign: "center",
     color: '#ffffff',
     justifyContent: 'center',
+    borderRadius: '10%',
   },
   media: {
     margin: 'auto',
@@ -44,8 +42,10 @@ export default function RealtorCard({realtor}) {
     <Card className={classes.root}>
       <CardHeader
         title={realtor.name}
-        subheader={realtor.dateEmployed}
-      />
+        />
+      <Typography variant="body2" component="p">
+        {realtor.dateEmployed}
+        </Typography>
       <CardMedia
         className={classes.media}
         image={realtor.image}

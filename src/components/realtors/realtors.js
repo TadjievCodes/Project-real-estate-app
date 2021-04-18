@@ -17,7 +17,7 @@ const Realtors = [
     alt: "steveWonder",
     dateEmployed: "Date Employed: August. 28 2020",
     description:
-      "Steve Wonder has recently joined the team",
+      "Steve Wonder has recently joined the team and is highly commited to giving customers the best experience",
   },
   {
     name: "Emma Grant",
@@ -30,7 +30,7 @@ const Realtors = [
   {
     name: "Eric Baldwin",
     image: jimmyJones,
-    alt: "jimmyJones",
+    alt: "ericBaldwin",
     dateEmployed: "Date Employed: Oct. 15 2017",
     description:
       "Eric Baldwin is the longest employed agent",

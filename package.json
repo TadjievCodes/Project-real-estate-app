@@ -12,6 +12,7 @@
     "classnames": "^2.2.6",
     "core-js": "^3.9.1",
     "firebase": "^8.2.9",
+    "hero-slider": "^2.0.3",
     "node-modules": "^1.0.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.0",
@@ -21,6 +22,7 @@
     "react-scripts": "4.0.3",
     "spectre.css": "^0.5.9",
     "staticPath": "public",
+    "styled-components": "^5.2.3",
     "web-vitals": "^1.1.0"
   },
   "headers": {
