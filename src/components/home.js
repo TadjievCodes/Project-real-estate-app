@@ -3,10 +3,6 @@ import React, { Component } from "react";
 import Header from "./Header";
 import SliderData from "../components/Slider/slider";
 import HeroSlider, { Slide, Nav, OverlayContainer } from "hero-slider";
-
-import React, { Component } from 'react';
-
-
 import styles from "../components/style.css";
 
 
@@ -47,13 +43,13 @@ class Home extends Component {
       </HeroSlider>
 
   
-    return (
-      <div className="container">      
-      <div className="App2">
-      <h1 className="header">Hello Property Details</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      </div>
-    </div>
+    // return (
+    //   <div className="container">      
+    //   <div className="App2">
+    //   <h1 className="header">Hello Property Details</h1>
+    //   <h2>Start editing to see some magic happen!</h2>
+    //   </div>
+    // </div>
 
     );
   }
