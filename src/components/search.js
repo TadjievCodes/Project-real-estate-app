@@ -1,24 +1,12 @@
 import * as React from 'react'
 import { Component } from 'react'
 import Hero from '../components/Hero'
-import withStyles from '@material-ui/core/styles/withStyles';
 import { PropertyListingsProvider, PropertyListingsConsumer } from '../contexts/PropertyListingsProvider'
 
 import Listing from '../components/listing'
 import Filter from '../components/filter'
-// import Typography from '@material-ui/core/Typography';
-
-// const styles = (theme) => ({
-//   ...theme
-// })
-
-
-
-
 class Search extends Component {
   render(){
-    // const {classes } = this.props 
-
     return (
       
     <div>

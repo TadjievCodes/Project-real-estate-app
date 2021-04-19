@@ -19,10 +19,6 @@ import {ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 import Header from './components/Header';
 
-import HomeTwo from './pages/HomeTwo'
-import Details from './pages/Details'
-// import { createMuiTheme } from '@material-ui/core';
-
 const theme = createMuiTheme(themeFile);
 
 function App() {
@@ -43,9 +39,6 @@ function App() {
                   <Route path='/forgot-password' component={ForgotPassword} />
                   <Route path='/search' component={Search} />
                   <Route path='/map' component={Map} />
-                  <Route path='/HomeTwo' component={HomeTwo} />
-                {/*   <Route path='/details/:propertyId' component={Details} />   */}
-
                 </Switch>
               </AuthProvider>
           </Container>

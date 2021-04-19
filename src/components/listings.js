@@ -1,9 +1,7 @@
 
-import React, { Component } from "react";
-import Header from "./Header";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "./Card/cardUI";
-import { makeStyles } from "@material-ui/core";
 import realtors from './realtors/realtors';
 
 
@@ -14,8 +12,7 @@ export default function Realtors() {
         <h1> Realtors </h1>
         <Grid container spacing={4} justify="center">
           {realtors.map(realtor => (
-            
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid key={realtor.id} item xs={12} sm={6} md={4}>
              <Card realtor={realtor} />
             </Grid>
           ))}

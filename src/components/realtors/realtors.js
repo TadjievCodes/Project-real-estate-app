@@ -6,6 +6,7 @@ import ericBaldwin from "../../img/realtors/ericBaldwin.jpg";
 // data for each realtor
 const Realtors = [
   {
+    id: 1,
     name: "Jimmy Jones",
     image: jimmyJones,
     alt: "jimmyJones",
@@ -14,6 +15,7 @@ const Realtors = [
       "Jimmy Jones has been in the real estate industry for more than 20 years",
   },
   {
+    id: 2,
     name: "Steve Wonder",
     image: steveWonder,
     alt: "steveWonder",
@@ -22,6 +24,7 @@ const Realtors = [
       "Steve Wonder has recently joined the team and is highly commited to giving customers the best experience",
   },
   {
+    id: 3,
     name: "Emma Grant",
     image: emmaGrant,
     alt: "emmaGrant",
@@ -30,6 +33,7 @@ const Realtors = [
       "Emma Grant is the only woman agents, but also one of our top performers",
   },
   {
+    id: 4,
     name: "Eric Baldwin",
     image: ericBaldwin,
     alt: "ericBaldwin",

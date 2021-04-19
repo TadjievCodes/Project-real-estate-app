@@ -1,10 +1,8 @@
 
-import React, { Component } from "react";
+import React from "react";
 import SliderData from "../components/Slider/slider";
 import HeroSlider, {Slide, OverlayContainer} from "hero-slider";
-import { makeStyles } from '@material-ui/core/styles';
-import {Button} from '@material-ui/core';
-import { findByLabelText } from "@testing-library/dom";
+import Typography from '@material-ui/core/Typography';
 
 
 
@@ -29,6 +27,14 @@ export default function Home() {
         width: "100vw",
       }}
     >
+
+      <OverlayContainer>
+        <center style={{paddingTop: "10vh"}}>
+        <Typography variant="h3" style={{color: "#ffffff", width: "90vw"}}>
+            Welcome to Real Estate Inc.
+        </Typography>
+        </center>
+      </OverlayContainer>
 
       {SliderData.map((house) => (
         <Slide

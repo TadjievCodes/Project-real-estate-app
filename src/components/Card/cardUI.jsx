@@ -34,11 +34,6 @@ const useStyles = makeStyles((theme) => ({
 export default function RealtorCard({realtor}) {
   // card template for realtor data
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   return (
     <Card className={classes.root}>

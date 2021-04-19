@@ -3,9 +3,9 @@ import { Card, Button, Alert } from "react-bootstrap"
 import { useAuth } from "../../contexts/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 import CenteredContainer from "./CenteredContainer"
-import Header from '../Header';
 
 export default function Dashboard() {
+
 
   // definig hooks
   const [error, setError] = useState("")
@@ -28,9 +28,8 @@ export default function Dashboard() {
   }
 
   return (
-    <CenteredContainer>
-      <Header/>
-      <Card>
+    <CenteredContainer >
+      <Card style={{height: "60vh"}}>
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
