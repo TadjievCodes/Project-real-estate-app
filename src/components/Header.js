@@ -43,7 +43,7 @@ export default function ButtonAppBar() {
             <Button variant="contained" color="primary" style={{color: "white", textDecoration: "none", marginRight: "2%"}} component={Link} to='/'>Home</Button>
             <Button variant="contained" color="primary" style={{color: "white", textDecoration: "none", marginRight: "2%"}}  component={Link} to='/listings'>Realtors</Button>
             <Button variant="contained" color="primary" style={{color: "white", textDecoration: "none", marginRight: "2%"}}  component={Link} to='/search'>Search</Button>
-            <Button variant="contained" color="primary" style={{color: "white", textDecoration: "none", marginRight: "2%"}}  component={Link} to='/map'>Map</Button>
+            <Button variant="contained" color="primary" style={{color: "white", textDecoration: "none", marginRight: "2%"}}  component={Link} to='/map'>Contact us</Button>
             <Button variant="contained" color="primary" style={{color: "white", textDecoration: "none", marginRight: "2%"}}  component={Link} to='/login'>Login</Button>
             {/* <a href="tel:+1-555-555-1212">555-555-1212</a> */}
             <Button color="inherit" href="tel:+1-555-555-1212">Call us</Button>
