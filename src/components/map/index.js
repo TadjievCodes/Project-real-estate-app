@@ -8,7 +8,7 @@ function Map() {
     <div style={{marginTop: "5%"}}>
       <h2>You can contact us by:</h2> <br/>
       <h3>Calling: +1-226-224-1256</h3> <br/>
-      <h3>Or Email: BigDick@gmail.com</h3>
+      <h3>Or Email: real_Estate@gmail.com</h3>
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe
