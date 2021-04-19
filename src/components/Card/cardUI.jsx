@@ -22,15 +22,17 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     height: 'auto',
     width: '50%',
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '56.25%',
     borderRadius: '50%',
   },
   button: {
      margin: 'auto', 
+     color: '#ffffff',
   }
 }));
 
 export default function RealtorCard({realtor}) {
+  // card template for realtor data
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -56,8 +58,8 @@ export default function RealtorCard({realtor}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button className={classes.button} variant="contained" color="primary">
-            See Properties
+        <Button href="/search" className={classes.button} variant="contained" color="primary">
+            <div style={{color: "#ffffff"}}>See Properties</div>
         </Button>
       </CardActions>
     </Card>

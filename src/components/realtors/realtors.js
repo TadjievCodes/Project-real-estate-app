@@ -1,7 +1,9 @@
 import jimmyJones from "../../img/realtors/jimmyJones.jpg";
 import steveWonder from "../../img/realtors/steveWonder.jpg";
 import emmaGrant from "../../img/realtors/emmaGrant.jpg";
+import ericBaldwin from "../../img/realtors/ericBaldwin.jpg";
 
+// data for each realtor
 const Realtors = [
   {
     name: "Jimmy Jones",
@@ -29,7 +31,7 @@ const Realtors = [
   },
   {
     name: "Eric Baldwin",
-    image: jimmyJones,
+    image: ericBaldwin,
     alt: "ericBaldwin",
     dateEmployed: "Date Employed: Oct. 15 2017",
     description:

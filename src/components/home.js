@@ -1,8 +1,11 @@
 
 import React, { Component } from "react";
 import SliderData from "../components/Slider/slider";
-import HeroSlider, {Slide} from "hero-slider";
+import HeroSlider, {Slide, OverlayContainer} from "hero-slider";
 import { makeStyles } from '@material-ui/core/styles';
+import {Button} from '@material-ui/core';
+import { findByLabelText } from "@testing-library/dom";
+
 
 
 export default function Home() {
@@ -26,6 +29,7 @@ export default function Home() {
         width: "100vw",
       }}
     >
+
       {SliderData.map((house) => (
         <Slide
           background={{
@@ -35,6 +39,5 @@ export default function Home() {
         />
       ))}
     </HeroSlider>
-
   );
 }
