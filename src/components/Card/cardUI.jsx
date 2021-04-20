@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Link } from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -53,9 +54,10 @@ export default function RealtorCard({realtor}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button href="/search" className={classes.button} variant="contained" color="primary">
+        <Link className={classes.button} to="/search"><Button  variant="contained" color="primary">
             <div style={{color: "#ffffff"}}>See Properties</div>
         </Button>
+        </Link>
       </CardActions>
     </Card>
   );

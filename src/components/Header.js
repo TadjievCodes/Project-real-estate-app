@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
-  menuItems: {
-    width: "200px",
+  menu:{
+    minHeight: "50vh",
   },
 }));
 
@@ -71,13 +71,15 @@ export default function ButtonAppBar() {
             open={open}
             onClose={handleClose}
             >
-          <ul className={classes.menuItems}>
-            <Link to="/"><MenuItem onClick={handleClose}>Home</MenuItem></Link>
-            <Link to="/listings"><MenuItem onClick={handleClose}>Realtors</MenuItem></Link>
-            <Link to="/search"><MenuItem onClick={handleClose}>Search</MenuItem></Link>
-            <Link to="/map"><MenuItem onClick={handleClose}>Contact Us</MenuItem></Link>
-            <Link to="/login"><MenuItem onClick={handleClose}>Login</MenuItem></Link>
-            </ul>
+            <Link to="/"><li onClick={handleClose}>Home</li></Link>
+            <br/>
+            <Link to="/listings"><li onClick={handleClose}>Realtors</li></Link>
+            <br/>
+            <Link to="/search"><li onClick={handleClose}>Search</li></Link>
+            <br/>
+            <Link to="/map"><li onClick={handleClose}>Contact Us</li></Link>
+            <br/>
+            <Link to="/login"><li onClick={handleClose}>Login</li></Link>
           </Menu>
         </Toolbar>
       </AppBar>
